@@ -1,0 +1,66 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+
+
+.read-the-docs {
+  color: #888;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Star rating */
+.bi-star-fill, .bi-star-half{
+  color: #FDD835;
+  font-size: 12px;
+}
+.star-gray{
+  color: #B8B8B8;
+}
+
+/* Font size */
+.fs-10px{
+  font-size: 10px;
+}
+.fs-13px{
+  font-size: 13px;
+}
+.fs-12px{
+  font-size: 12px;
+}
+.fs-14px{
+  font-size: 14px;
+}
+
+
+.logo-brand{
+  max-width: 72px;
+  height: auto;
+}
+.search-bar{
+  max-height: 40px;
+}
+.icon-search-bar{
+  max-width: 20px;
+}
+.home-icon, .account-icon, .cart-icon{
+  max-width: 24px;
+  max-height: 24px;
+}
+.cart p{
+  min-width: 14px;
+  max-height: 16px;
+  top: -12px;
+  left: -6px;
+}
+.card-img-top{
+  max-width: 200px;
+  height: auto;
+}
