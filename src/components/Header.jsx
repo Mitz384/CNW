@@ -1,9 +1,10 @@
 // Component header
 function Header() {
-    return <nav>
-			<ul className="row p-0 align-items-center col-gap-1">
+    return <nav className="container-lg">
+			{/* Màn hình to */}
+			<ul className="row p-0 align-items-center col-gap-1 d-none d-lg-flex py-4">
 				<li className="col-md-1 col-12 p-0">
-					<a href="">
+					<a href="/">
 						<img src="https://s3-alpha-sig.figma.com/img/0fc4/c1bd/682eccf8d6c5e3ed3e5df02dab272608?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZxZixsMm-1cU3kGpCacgo35lEkAqP7E~5myULZbUrLlOpgTpWKEPJ9Q1DQYTYKMdRfbwrPeBU1QW3VcPtXVw-QcVhOusF3Ju9vNATvHkBeT~f2SPxMt8JFDHYD791GpT9p6tZef39-Lj5ax6lNVWoIIkz3LFoIto2ocOvy7WC9FH9wkv1esDixrtvRmVGha0w2n9GQ31jfEMePER1dF2n-JhRRyoGrIAzyyp8qj0pRyYLLA30TR6rCCP23DYDMsOY3E~VrqFxMicVpI~6OXiGTY73~uAf6QIroaXt1vlXAaOg3Zm0myZI6Tq3WXFx4GdrI~mdw4wOyaex38T7BROkQ__" className="logo-brand" alt="" />
 					</a>
 				</li>
@@ -17,7 +18,7 @@ function Header() {
 					</div>
 				</li>
 				<li className="col-3 d-flex justify-content-center gap-4 pe-0 border-end border-1">
-					<a href="" className="d-flex text-decoration-none gap-1">
+					<a href="/" className="d-flex text-decoration-none gap-1">
 						<img src="https://s3-alpha-sig.figma.com/img/428e/3a18/014835c48fc3848c37a8147a0b848e40?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cdh4XWS5FPrF73tKBc1MEjo4HMNhjyYrcWWpgPcgdNvBs~PeciQRU2eTI7tb3pBVf2C3KnxH6YSPTpbHCfWiylwLDXnmuvoFaJPw7~P0aKIdMAy-Gh7eYQ3PpsUZIi1fKgyCEyJTWq9e4khEitPfMPGdHVkPg7RSiC3sBPBXjoVGktBZFo~knMAU6NGjXL-OgJiiSQJ1qx718vlQGn-7RsH1NsrjSLFjeC0sEN3XQ9XqD3956afPerZs3Y-~J5CfoLw4w7smeIcl45U4sy1vKucf3lYf3Qt8wILBbestbEuMX3RsSViXj1sQ3KDlesMGaibEbKdCNokIs5MJXyGW3w__" className="home-icon" alt="" />
 						<p className="text-secondary m-0">Trang chủ</p>
 					</a>
@@ -30,6 +31,34 @@ function Header() {
 					<a href="" className="cart d-flex justify-content-end p-0 position-relative ps-1 mt-1">
 						<img src="https://s3-alpha-sig.figma.com/img/a084/d2e6/defd412e1477724456bfb6c09607f2de?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jRTTNh9X20kgBOF1qA54nSKiAALKDcG530vVH7NNnLvNqXdzF638CHb7gs7~Kd6w-yVlG4WDcFowkBgmidI7mGMTxIlIJNhWWV23660ieemEZRCe48bS7ws4B88KmpABapIYwCj5~aPLXhDTLdzaYo9vCRmfrkxENfUhUyxDVA2r8kusjsc4hO~67V-auagoqP~EXGSqZXYWVxzhN6y-xXV~nX6Y3UHeQyaTCNs3l0BAP0EShQZA9pAlL8E0-~zPcxl6eMgl1k-YCKVbRXsGDnpqa1nOOrcmm9DOf6oU6AWD8clLWkLNgp8kadyv7Z9op0aWsZc3YyHkUJwpvDuOgQ__" className="cart-icon position-relative" alt="" />
 						<p className="bg-danger position-relative rounded-circle fs-10px d-flex justify-content-center align-item-center text-white m-0">0</p>
+					</a>
+				</li>
+			</ul>
+			{/* Màn hình nhỏ */}
+			<ul className="row p-0 align-items-center col-gap-1 d-lg-none bg-primary px-3 py-2 ">
+				<li className="col-1 p-0">
+					<button className="btn p-0">
+						<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19.2625 9.2625L17.5 7.5L10 15L17.5 22.5L19.2625 20.7375L13.5375 15L19.2625 9.2625Z" fill="white"/>
+						</svg>
+					</button>
+				</li>
+				<li className="col-1 p-0">
+					<button className="btn p-0">
+						<i class="bi bi-list fs-2 text-white"></i>
+					</button>
+				</li>
+				<li className="col-9 p-0">
+					<div class="input-group">
+						<span className="input-group-text bg-white">
+							<img src="https://s3-alpha-sig.figma.com/img/bb50/959f/71ce6b3c94884bf4eb034d18e6c5f3eb?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MS6TFUBKBb8PNI0aTkBI3fleIBx6bGidcH1btJWbJY11o7CuFbCincQsvBG6OVK2fgSdNObONryJgGlQl1-31S0Okin5isOM-~NOBKigfezvrnE6d2BwrIoTky4BVElymEHuyWS3312Xckd3gx1WmMNL8oNkjTcZ1eOuE~SOv87BGiqHTwWv3Etf9LidhmHO81d9C3cRlLy2Zu2IZC5iW7D2lxB~MLezmCX2VTYZSna0K4fcmysvhG~vl4UNCkT6wogmVzc~WGIYtlhk56ZTnOfL53sHat0tzQC2Gw4ADx9acZXFMiwNvQjGva3XPx66e~xq45NDfPTyfUGhLZ8VGQ__" className="border-end-0" style={{maxHeight : "1rem"}} alt="" />
+						</span>
+						<input type="text" className="form-control border-start-0" placeholder="Bạn đang tìm kiếm gì"/>
+					</div>
+				</li>
+				<li className="col-1 p-0 pe-1">
+					<a href="" className="d-flex justify-content-end">
+						<i class="bi bi-cart2 fs-3 text-white"></i>
 					</a>
 				</li>
 			</ul>

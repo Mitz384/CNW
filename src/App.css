@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 1rem;
 }
 
 
@@ -38,6 +37,9 @@ ul{
 .fs-14px{
   font-size: 14px;
 }
+.fs-18px{
+  font-size: 18px;
+}
 
 
 .logo-brand{
@@ -60,7 +62,33 @@ ul{
   top: -12px;
   left: -6px;
 }
-.card-img-top{
-  max-width: 200px;
-  height: auto;
+
+.prod-card:hover{
+  text-decoration: none !important;
+}
+
+.card:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.book_description img{
+  width: 100% !important;
+  height: auto !important;
+}
+.book_description p{
+  margin: 0;
+}
+.slide{
+  height: 20rem;
+  width: 100%;
+  object-fit: scale-down;
+}
+.card-img-top {
+  width: 100%;
+  height: 100%; /* Đảm bảo tỷ lệ chiều cao không bị thay đổi */
+  object-fit:cover; /* Giữ cho tỷ lệ khung của ảnh không bị thay đổi */
 }

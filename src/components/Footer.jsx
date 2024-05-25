@@ -1,6 +1,6 @@
 function Footer() {
-    return <div className="pt-5 d-flex flex-column gap-3">
-			<ul className="row row-gap-3 row-gap-md-0">
+    return <div className="d-flex flex-column gap-3 d-none d-lg-flex">
+			<ul className="row row-gap-3 row-gap-md-0 pt-4 border-top">
 				{/* Công ty */}
 				<li className="col-md col-6 d-flex flex-column gap-3 p-0">
 					<p className="m-0 fw-medium text-dark">Công ty TNHH TIKI</p>

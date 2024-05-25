@@ -8,10 +8,10 @@ import { books } from '../data.json'
 function App() {
   return <div>
     <Header />
-    <div className="container p-0">
+    <div className="container pb-5">
       <div className="row">
         {/* Lọc sản phẩm */}
-        <div className="col-3 d-flex flex-column gap-4 p-0">
+        <div className="col-2 d-none d-lg-flex gap-4 flex-column p-0 ">
           {/* Danh mục sản phẩm */}
           <div className="d-flex gap-3 flex-column">
             <h5 className='fw-medium fs-14px text-dark m-0'>Danh Mục Sản Phẩm</h5>
@@ -89,17 +89,14 @@ function App() {
           </div>
         </div>
         {/* Danh sách sản phẩm */}
-        <div className="col-9">
-          <div className="row row-cols-6" style={{columnGap : "1rem"}}>
-              {books.map(b => <Book data={b} key={b.id} />)}
-            </div>
-          
+        <div className="col-lg-10">
+          <div className="row row-gap-2 gap-lg-3 justify-content-lg-center">
+            {books.map(b => <Book data={b} key={b.id} />)}
+          </div>
         </div>
       </div>
     </div>
-    {/* Props - properties */}
     
-
     <Footer />
   </div>
 }
